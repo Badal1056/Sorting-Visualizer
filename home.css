@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto','sans-serif';
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0,0.7),rgba(0,0,0,0.7)),url(./971.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.navbar img:hover{
+    text-shadow: 0 0 4px #ff4d4d, 0 0 8px #ff4d4d;
+    cursor: default;
+    box-shadow: 0 0 10px #ff4d4d, 0 0 18px #ff4d4d;
+    border-radius: 20%;
+}
+nav ul li:hover{
+    text-shadow: 0 0 4px #ff4d4d, 0 0 8px #ff4d4d;
+    cursor: default;
+    box-shadow: 0 0 10px #ff4d4d, 0 0 18px #ff4d4d;
+
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 60px;
+    border-radius: 20%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowGlow 6s linear infinite, moveGradient 6s linear infinite;
+}
+
+/* Rainbow glow animation */
+@keyframes rainbowGlow {
+    0% {
+      text-shadow: 0 0 0px red, 0 0 0px red;
+      color: red;
+    }
+    14% {
+      text-shadow: 0 0 0px orange, 0 0 0px orange;
+      color: orange;
+    }
+    28% {
+      text-shadow: 0 0 0px yellow, 0 0 0px yellow;
+      color: yellow;
+    }
+    42% {
+      text-shadow: 0 0 0px green, 0 0 0px green;
+      color: green;
+    }
+    57% {
+      text-shadow: 0 0 0px cyan, 0 0 0px cyan;
+      color: cyan;
+    }
+    71% {
+      text-shadow: 0 0 0px blue, 0 0 0px blue;
+      color: blue;
+    }
+    85% {
+      text-shadow: 0 0 0px violet, 0 0 0px violet;
+      color: violet;
+    }
+    100% {
+      text-shadow: 0 0 0px red, 0 0 0px red;
+      color: red;
+    }
+}
+
+/* Gradient movement animation */
+@keyframes moveGradient {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+  }
+
+p{
+    color: #fff;
+    font-size: 23px;
+    line-height: 15px;
+    padding-left: 10px;
+}
+
+.col .sorting-btn button{
+    width: 180px;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px;
+    background:transparent;
+    border-radius: 20px;
+    border-color: #ff4d4d;
+    margin-top: 30px;
+}
+
+.col .sorting-btn button:hover{
+    text-shadow: 0 0 4px #ff4d4d, 0 0 8px #ff4d4d;
+    cursor:pointer;
+    box-shadow: 0 0 10px #ff4d4d, 0 0 18px #ff4d4d;
+}
+
+
+.col .card1 button:hover{
+    cursor:pointer;
+}
+.col .card2 button:hover{
+    cursor:pointer;
+}
+.col .card3 button:hover{
+    cursor:pointer;
+}
+.col .card4 button:hover{
+    cursor:pointer;
+}
+.col .card5 button:hover{
+    cursor:pointer;
+}
+.col .card6 button:hover{
+    cursor:pointer;
+}
+
+.card{
+    width: 170px;
+    height: 190px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(./pic-1.jpg);
+}
+.card2{
+    background-image: url(./pic-2.jpg);
+}
+.card3{
+    background-image: url(./pic-3.jpg);
+}
+.card4{
+    background-image: url(./pic-4.jpg);
+}
+.card5{
+    background-image: url(./pic-5.jpg);
+}
+.card6{
+    background-image: url(./pic-6.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px #ff4d4d, 0 0 18px #ff4d4d;
+    cursor: pointer;
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    font-size: 15px;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+
+.col .card1 button{
+    width: 100px;
+    color: #000;
+    font-size: 12px;
+    padding: 50px;
+    background:transparent;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 15px;
+}
+.col .card2 button{
+    width: 100px;
+    color: #000;
+    font-size: 12px;
+    padding: 50px;
+    background:transparent;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 15px;
+}
+.col .card3 button{
+    width: 100px;
+    color: #000;
+    font-size: 12px;
+    padding: 50px;
+    background:transparent;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 15px;
+}
+.col .card4 button{
+    width: 100px;
+    color: #000;
+    font-size: 12px;
+    padding: 50px;
+    background:transparent;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 15px;
+}
+.col .card5 button{
+    width: 100px;
+    color: #000;
+    font-size: 12px;
+    padding: 50px;
+    background:transparent;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 15px;
+}
+.col .card6 button{
+    width: 100px;
+    color: #000;
+    font-size: 12px;
+    padding: 50px;
+    background:transparent;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 15px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 85%;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .footer:hover {
+    color: #ffffff;
+    text-shadow: 0 0 4px #ff4d4d, 0 0 8px #ff4d4d;
+    cursor: default;
+    transform: translateY(-10px);
+  }
+  
+  .dark-mode {
+    background: #000;
+    color: #fff;
+  }
+  
+  .toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 12px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 50%;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s, transform 0.2s ease;
+  }
+  
+  .toggle-btn:hover {
+    background: #fff;
+    transform: scale(1.1);
+    text-shadow: 0 0 4px #ff4d4d, 0 0 8px #ff4d4d;
+    cursor:pointer;
+    box-shadow: 0 0 10px #ff4d4d, 0 0 18px #ff4d4d;
+  }
+  
+ /* LIGHT MODE THEME (toggle ON) */
+.light-mode .container {
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(./971.jpg);
+    background-blend-mode:difference;
+    color: #000;
+    
+  }
+  
+  .light-mode nav ul li a {
+    color: #222;
+  }
+  
+  .light-mode .card {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    color: #000;
+  }
+  
+  .light-mode h1{
+    color: #fff;
+    font-size: 100px;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowGlow 6s linear infinite, moveGradient 6s linear infinite;
+}
+
+/* Rainbow glow animation */
+@keyframes rainbowGlow {
+    0% {
+      text-shadow: 0 0 0px red, 0 0 0px red;
+      color: red;
+    }
+    14% {
+      text-shadow: 0 0 0px orange, 0 0 0px orange;
+      color: orange;
+    }
+    28% {
+      text-shadow: 0 0 0px yellow, 0 0 0px yellow;
+      color: yellow;
+    }
+    42% {
+      text-shadow: 0 0 0px green, 0 0 0px green;
+      color: green;
+    }
+    57% {
+      text-shadow: 0 0 0px cyan, 0 0 0px cyan;
+      color: cyan;
+    }
+    71% {
+      text-shadow: 0 0 0px blue, 0 0 0px blue;
+      color: blue;
+    }
+    85% {
+      text-shadow: 0 0 0px violet, 0 0 0px violet;
+      color: violet;
+    }
+    100% {
+      text-shadow: 0 0 0px red, 0 0 0px red;
+      color: red;
+    }
+}
+
+    .light-mode .toggle-btn:hover {
+    background: #000;
+    transform: scale(1.1);
+  }
+
+  .light-mode h5 {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  .light-mode p{
+    color: #222;
+    text-shadow: none;
+  }
+  
+  .light-mode .footer {
+    color: #222;
+  }
+  
+  .light-mode .footer:hover {
+    text-shadow: 0 0 px #000;
+  }
+  
+  .light-mode .toggle-btn {
+    background: #444;
+    color: #000;
+  }
+  
+  .light-mode .sorting-btn button{
+    color: #222;
+  }
+  
+  .light-mode .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px #ff4d4d, 0 0 18px #ff4d4d;
+    cursor: pointer;
+}
