@@ -2,70 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorting Visualizer</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Sorting Visualizer | Badal Jha</title>
+    <link rel="stylesheet" href="home.css">
+    
 </head>
 <body>
-
-    <header>
-        <nav>
-            <div class="array-inputs">
-                <p>Size of the array:</p>
-                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
-                <p>Speed of the algorithm:</p>
-                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
-                <button id="a_generate">Generate New Array!</button>
-            </div>
-            <div class="header_right">
-                <p class="nav-heading">Sorting visualizer</p>
-                <div class="algos">
-                    <button style="margin-right: 10px;">Bubble</button>
-                    <button style="margin-right: 9px;">Quick</button>
-                    <button style="margin-right: 8px;">Merge</button>
-                    <button style="margin-right: 8px;">Heap</button>
-                    <button style="margin-right: 10px;">Insertion</button>
-                    <button style="margin-right: -2px;">Selection</button>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section>
-        <div id="Info_Cont1">
-            <h1>Unsorted</h1>
-            <div class="triangle">
-            </div>
-            <br>
-            <br>
-            <h1>Swapping</h1>
-            <div class="rectangle"></div>
-            <br>
-            <br>
-            <h1>Checking</h1>
-            <div class="circle"></div>
-            <br>
-            <br>
-            <h1>Sorted</h1>
-            <div class="square">
+    <div class="container">
+       <div class="navbar">
+          <img src="./logo.png" class="logo">
+          <nav>
+              <ul>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="">PROJECT</a></li>
+              </ul>
+              <button class="toggle-btn" onclick="toggleLightMode()" id="modeToggle">
+                ☀️
+              </button>              
+              
+          </nav>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1>Sorting Visualizer</h1>
+            <p>Lets make learing fun!</p>
+            <div class="sorting-btn">
+            <button onclick="window.location.href='sortinghomepage.html';">Start Sorting !</button>
             </div>
         </div>
-        <div id="array_container"> 
+    <div class="col">
+        <div class="card card1">
+            <h5>BUBBLE SORT</h5>
+            <button onclick="window.location.href='bubblesort.html';"></button>
+            <p> </p>
         </div>
-        <div id="Info_Cont2">
+        <div class="card card2">
+            <h5>INSERTION SORT</h5>
+            <button onclick="window.location.href='insertion.html';"></button>
+            <p></p>
         </div>
-    </section>
-    <footer>
+        <div class="card card3">
+            <h5>HEAP SORT</h5>
+            <button onclick="window.location.href='heapsort.html';"></button>
+            <p></p>
+        </div>
+        <div class="card card4">
+            <h5>SELECTION SORT</h5>
+            <button onclick="window.location.href='selectionsort.html';"></button>
+            <p></p>
+        </div>
+        <div class="card card5">
+            <h5>MERGE SORT</h5>
+            <button onclick="window.location.href='mergesort.html';"></button>
+            <p></p>
+        </div>
+        <div class="card card6">
+            <h5>QUICK SORT</h5>
+            <button onclick="window.location.href='quicksort.html';"></button>
+            <p></p>
+        </div>
+    </div>
+    <footer class="footer">
+        Made with ❤️ by Badal Jha
     </footer>
-
-    <script src="./scripts/main.js"></script>   
-    <script src="./scripts/visualizations.js"></script> 
-    <script src="./scripts/bubble_sort.js"></script>
-    <script src="./scripts/selection_sort.js"></script>
-    <script src="./scripts/insertion_sort.js"></script>
-    <script src="./scripts/merge_sort.js"></script>
-    <script src="./scripts/quick_sort.js"></script>
-    <script src="./scripts/heap_sort.js"></script>
+    <script>
+        const body = document.body;
+        const toggleBtn = document.getElementById('modeToggle');
+      
+        // Start in dark mode by default
+        const isLightMode = localStorage.getItem('light-mode') === 'true';
+        if (isLightMode) {
+          body.classList.add('light-mode');
+          toggleBtn.textContent = '🌙';
+        }
+      
+        function toggleLightMode() {
+          body.classList.toggle('light-mode');
+          const lightModeEnabled = body.classList.contains('light-mode');
+          localStorage.setItem('light-mode', lightModeEnabled);
+          toggleBtn.textContent = lightModeEnabled ? '🌙' : '☀️';
+        }
+      </script>
 </body>
-
-
 </html>
