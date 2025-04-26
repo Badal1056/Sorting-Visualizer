@@ -288,6 +288,17 @@ h5{
     cursor: default;
     transform: translateY(-10px);
   }
+
+  .footer-link {
+    color: #fff;
+  }
+  
+  .footer-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 4px #ff4d4d, 0 0 8px #ff4d4d;
+    cursor: default;
+    transform: translateY(-10px);
+  }
   
   .dark-mode {
     background: #000;
@@ -399,6 +410,14 @@ h5{
   }
   
   .light-mode .footer:hover {
+    text-shadow: 0 0 px #000;
+  }
+
+  .light-mode .footer-link {
+    color: #222;
+  }
+  
+  .light-mode .footer-link:hover {
     text-shadow: 0 0 px #000;
   }
   
